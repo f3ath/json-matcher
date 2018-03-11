@@ -4,7 +4,7 @@ author: Alexey Karapetov <karapetov@gmail.com>
 homepage: https://github.com/f3ath/json-matcher
 description: JSON Matcher for unit tests. Adds encodesTo() matcher which checks if the value encodes to a certain JSON
 dependencies:
-  convert: ">=2.0.0"
-  matcher: ">=0.12.0"
+  convert: ">=2.0.0 <3.0.0"
+  matcher: ">=0.12.0 <0.13.0"
 dev_dependencies:
   test: ">=0.12.0"
