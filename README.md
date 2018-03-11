@@ -1,6 +1,6 @@
 ## JSON Matcher for unit tests
 
-Adds encodesToJson() matcher which checks if the value encodes to a certain JSON. 
+Provides encodesToJson() matcher which checks if the value encodes to a certain JSON. 
 
 ```dart
 class Foo {
