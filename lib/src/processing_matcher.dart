@@ -17,7 +17,7 @@ class ProcessingMatcher implements Matcher {
 
   @override
   Description describeMismatch(item, Description mismatchDescription,
-      Map matchState, bool verbose) =>
+          Map matchState, bool verbose) =>
       _matcher.describeMismatch(
           _process(item), mismatchDescription, matchState, verbose);
 
