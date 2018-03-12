@@ -1,6 +1,6 @@
 ## JSON Matcher for unit tests
 
-Provides encodesToJson() matcher which checks if the value encodes to a certain JSON. 
+Provides `encodesToJson()` matcher which checks if the value encodes to expected JSON. 
 
 ```dart
 class Foo {
@@ -16,7 +16,7 @@ void main() {
   test('JSON encoding is performed', () {
     final foo = new Foo('hello', 'world');
     final json = {'hello': 'world'};
-    expect(foo, encodesToJson(json)); // Ensuring foo encodes to a proper JSON
+    expect(foo, encodesToJson(json)); // Ensuring foo encodes to proper JSON
   });
 }
 ```
