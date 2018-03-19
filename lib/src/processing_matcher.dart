@@ -4,7 +4,7 @@ class ProcessingMatcher implements Matcher {
   final Matcher _matcher;
   final _fn;
 
-  ProcessingMatcher(Matcher this._matcher, this._fn(item));
+  ProcessingMatcher(Matcher this._matcher, dynamic this._fn(dynamic item));
 
   @override
   Description describe(Description description) {
