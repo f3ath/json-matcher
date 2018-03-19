@@ -32,4 +32,12 @@ void main() {
     };
     expect(bar, encodesToJson(json));
   });
+
+  test('Matching for strings', () {
+    final string = '{"my_foo": {"hello": "world"}}';
+    final json = {
+      'my_foo': {'hello': 'world'}
+    };
+    expect(string, isJson(json));
+  });
 }
