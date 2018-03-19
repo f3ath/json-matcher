@@ -18,5 +18,11 @@ void main() {
     final json = {'hello': 'world'};
     expect(foo, encodesToJson(json)); // Ensuring foo encodes to proper JSON
   });
+  
+  test('Strings can be matched, key order does not matter', () {
+    final string = '{"foo": "bar", "hello": "world"}';
+    final json = {'hello': 'world', 'foo': 'bar'};
+    expect(string, isJson(json));
+  });
 }
 ```
