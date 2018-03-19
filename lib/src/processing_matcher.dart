@@ -4,7 +4,7 @@ class ProcessingMatcher implements Matcher {
   final Matcher _matcher;
   final _fn;
 
-  ProcessingMatcher(Matcher this._matcher, this._fn(item));
+  ProcessingMatcher(Matcher this._matcher, dynamic this._fn(dynamic item));
 
   @override
   Description describe(Description description) {
@@ -18,6 +18,5 @@ class ProcessingMatcher implements Matcher {
           _fn(item), mismatchDescription, matchState, verbose);
 
   @override
-  bool matches(item, Map matchState) =>
-      _matcher.matches(_fn(item), matchState);
+  bool matches(item, Map matchState) => _matcher.matches(_fn(item), matchState);
 }
