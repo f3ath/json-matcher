@@ -1,4 +1,4 @@
-## JSON Matcher for unit tests
+## JSON Matchers for unit tests
 
 Provides:
  - `encodesToJson()` matcher which checks if the value encodes to expected JSON
