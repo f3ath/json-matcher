@@ -10,14 +10,6 @@ class Foo {
   toJson() => {key: val};
 }
 
-class Bar {
-  final Foo foo;
-
-  Bar(Foo this.foo);
-
-  toJson() => {'my_foo': foo};
-}
-
 void main() {
   test('JSON encoding is performed', () {
     final foo = new Foo('hello', 'world');
@@ -25,11 +17,9 @@ void main() {
     expect(foo, encodesToJson(json));
   });
 
-  test('JSON encoding is performed for the value under test', () {
-    final bar = new Bar(new Foo('hello', 'world'));
-    final json = {
-      'my_foo': {'hello': 'world'}
-    };
-    expect(bar, encodesToJson(json));
+  test('Strings can be matched, key order does not matter', () {
+    final string = '{"foo": "bar", "hello": "world"}';
+    final json = {'hello': 'world', 'foo': 'bar'};
+    expect(string, isJson(json));
   });
 }

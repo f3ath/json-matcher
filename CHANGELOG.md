@@ -6,9 +6,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.1.3] - 2018-03-19
+### Added
+- String matcher
+
 ## [0.1.2] - 2018-03-11
 ### Added
-- Analysis options added
+- Analysis options
 
 ## [0.1.1] - 2018-03-11
 ### Added
@@ -18,6 +22,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - encodesToJson() matcher
 
-[Unreleased]: https://github.com/f3ath/json-matcher/compare/0.1.1...HEAD
+[Unreleased]: https://github.com/f3ath/json-matcher/compare/0.1.3...HEAD
+[0.1.3]: https://github.com/f3ath/json-matcher/compare/0.1.2...0.1.3
+[0.1.2]: https://github.com/f3ath/json-matcher/compare/0.1.1...0.1.2
 [0.1.1]: https://github.com/f3ath/json-matcher/compare/0.1.0...0.1.1
 [0.1.0]: https://github.com/f3ath/json-matcher/releases/tag/0.1.0
