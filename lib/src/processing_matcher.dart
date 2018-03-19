@@ -18,6 +18,5 @@ class ProcessingMatcher implements Matcher {
           _fn(item), mismatchDescription, matchState, verbose);
 
   @override
-  bool matches(item, Map matchState) =>
-      _matcher.matches(_fn(item), matchState);
+  bool matches(item, Map matchState) => _matcher.matches(_fn(item), matchState);
 }
