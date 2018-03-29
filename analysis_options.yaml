@@ -1,5 +1,8 @@
 analyzer:
-  strong-mode: true
+  strong-mode:
+    implicit-casts: false
+    implicit-dynamic: false
+linter:
   rules:
     - always_declare_return_types
     - always_put_control_body_on_new_line
