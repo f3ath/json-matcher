@@ -1,5 +1,5 @@
 name: json_matcher
-version: 0.1.5
+version: 0.1.6
 author: Alexey Karapetov <karapetov@gmail.com>
 homepage: https://github.com/f3ath/json-matcher
 description: "JSON Matchers for unit tests: encodesToJson() checks if the value encodes to expected JSON, isJson() checks if the string is expected JSON."

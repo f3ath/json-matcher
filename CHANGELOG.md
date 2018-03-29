@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.1.6] - 2018-03-28
+### Fixed
+- SCREAMING CAPS deprecation warning in dart:convert
+
 ## [0.1.5] - 2018-03-19
 ### Fixed
 - Fixed minor linter issues in dart 2.0
@@ -30,7 +34,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - encodesToJson() matcher
 
-[Unreleased]: https://github.com/f3ath/json-matcher/compare/0.1.5...HEAD
+[Unreleased]: https://github.com/f3ath/json-matcher/compare/0.1.6...HEAD
+[0.1.6]: https://github.com/f3ath/json-matcher/compare/0.1.5...0.1.6
 [0.1.5]: https://github.com/f3ath/json-matcher/compare/0.1.4...0.1.5
 [0.1.4]: https://github.com/f3ath/json-matcher/compare/0.1.3...0.1.4
 [0.1.3]: https://github.com/f3ath/json-matcher/compare/0.1.2...0.1.3
