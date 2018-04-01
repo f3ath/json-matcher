@@ -7,7 +7,7 @@ class Foo {
 
   Foo(String this.key, String this.val);
 
-  toJson() => {key: val};
+  Map<String, String> toJson() => {key: val};
 }
 
 void main() {

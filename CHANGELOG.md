@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.1.7] - 2018-04-01
+### Fixed
+- Stricter analyzer options
+
 ## [0.1.6] - 2018-03-28
 ### Fixed
 - SCREAMING CAPS deprecation warning in dart:convert
