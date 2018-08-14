@@ -1,10 +1,12 @@
 import 'package:matcher/matcher.dart';
 
+typedef Processor = dynamic Function(dynamic);
+
 class ProcessingMatcher implements Matcher {
   final Matcher _matcher;
-  final _fn;
+  final Processor _processor;
 
-  ProcessingMatcher(Matcher this._matcher, this._fn(item));
+  ProcessingMatcher(Matcher this._matcher, Processor this._processor);
 
   @override
   Description describe(Description description) {
@@ -15,9 +17,9 @@ class ProcessingMatcher implements Matcher {
   Description describeMismatch(item, Description mismatchDescription,
           Map matchState, bool verbose) =>
       _matcher.describeMismatch(
-          _fn(item), mismatchDescription, matchState, verbose);
+          _processor(item), mismatchDescription, matchState, verbose);
 
   @override
   bool matches(item, Map matchState) =>
-      _matcher.matches(_fn(item), matchState);
+      _matcher.matches(_processor(item), matchState);
 }
