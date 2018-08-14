@@ -18,6 +18,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - Dart 2.0 compat
 
+## [0.1.6] - 2018-03-28
+### Fixed
+- SCREAMING CAPS deprecation warning in dart:convert
+
+## [0.1.5] - 2018-03-19
+### Fixed
+- Fixed minor linter issues in dart 2.0
+
 ## [0.1.4] - 2018-03-19
 ### Fixed
 - Fixed minor linter issues
