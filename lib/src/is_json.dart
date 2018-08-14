@@ -3,5 +3,5 @@ import 'package:matcher/matcher.dart';
 
 import 'processing_matcher.dart';
 
-Matcher isJson(val, [int limit = 100]) =>
-    new ProcessingMatcher(equals(val, limit), (v) => json.decode(v));
+Matcher isJson(string, [int limit = 100]) =>
+    new ProcessingMatcher(equals(string, limit), (v) => json.decode(v));
