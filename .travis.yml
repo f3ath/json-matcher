@@ -1,8 +1,8 @@
 language: dart
 dart:
-- stable
-- dev
+  - stable
+  - dev
 
 dart_task:
-- test
-- dartanalyzer: lib test
+  - test
+  - dartanalyzer: lib test

@@ -6,7 +6,7 @@ class ProcessingMatcher implements Matcher {
   final Matcher _matcher;
   final Processor _processor;
 
-  ProcessingMatcher(Matcher this._matcher, Processor this._processor);
+  ProcessingMatcher(this._matcher, this._processor);
 
   @override
   Description describe(Description description) {
